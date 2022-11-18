@@ -1,0 +1,16 @@
+{{#each users}}
+    <div id="elements">    
+        <h1>{{username}}</h1>
+        <p>password: {{password}}</p>
+        <p>email: {{email}}</p>
+        <a href="/user/delete/{{id}}" class="btn btn-danger btn-delete"> Delete</a>
+        <a href="/user/edit/{{id}}" class="btn btn-secondary">Edit</a>
+    </div>
+    {{else}}
+        <div class="col-md-4 mx-auto notTarget">
+            <div class="card card-body text-center">
+                <p>no hay usuarios registrados</p>
+                <a href="/signup">añade uno</a>
+            </div>
+        </div>
+{{/each}}

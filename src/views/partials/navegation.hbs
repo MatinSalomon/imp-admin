@@ -1,0 +1,34 @@
+{{#if user}}
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+     <a class="navbar-brand" href="/user">
+      <i class="fas fa-link"></i> Usuarios
+    </a>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="https://imp-production.up.railway.app/">Elementos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/signup">agregar usuario</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/logout">Logout</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+{{else}}
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/signin">signin</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+{{/if}}
